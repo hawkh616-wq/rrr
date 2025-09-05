@@ -1,0 +1,57 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Defines three columns */
+    grid-template-rows: 200px 100px 100px; /* Defines three rows */
+    gap: 10px; /* Space between grid items */
+    width: 90%;
+    margin: 20px auto;
+    height: 500px; /* Adjust as needed */
+    grid-template-areas:
+        "lorem1 lorem1 lorem6"
+        "lorem2 lorem3 lorem6"
+        "lorem4 lorem3 lorem6"
+        "lorem5 lorem5 lorem6"; /* Define named areas for placement */
+   
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.lorem1 {
+    background-color: #0f8e0f; /* Green */
+    grid-area: lorem1;
+}
+
+.lorem2 {
+    background-color: #b32bb3; /* Magenta */
+    grid-area: lorem2;
+}
+
+.lorem3 {
+    background-color: #676767; /* Gray */
+    grid-area: lorem3;
+}
+
+.lorem4 {
+    background-color: #0bffff; /* Cyan */
+    grid-area: lorem4;
+}
+
+.lorem5 {
+    background-color: #b93018; /* Tomato */
+    grid-area: lorem5;
+}
+
+.lorem6 {
+    background-color: #3d3d94; /* Blue */
+    grid-area: lorem6;
+}
